@@ -1,11 +1,14 @@
-import { useState } from 'react'
-
-import './App.css'
+import { useState } from "react";
+import Background from "./components/Background";
+import Fourground from "./components/Fourground";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-
+  return (
+    <div className="relative w-full h-screen bg-zinc-800">
+      <Background />
+      <Fourground />
+    </div>
+  );
 }
 
-export default App
+export default App;
